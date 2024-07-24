@@ -2,8 +2,8 @@
 This project addresses the critical challenge of waste management and recycling by utilizing deep learning techniques to automate the sorting of household garbage. Manual sorting is labor-intensive, time-consuming, and prone to errors that can contaminate recyclable materials, compromising their usability and overall recycling effectiveness. I leverage advanced artificial intelligence to accurately classify and segregate different types of waste, significantly improving sorting efficiency and reducing the reliance on manual labor. By enhancing the accuracy of waste classification, this approach not only streamlines the recycling process but also supports environmental sustainability by ensuring a higher percentage of materials are correctly recycled and diverted from landfills.
 
 # Dataset 
-Source: https://www.kaggle.com/datasets/mostafaabla/garbage-classification
-Description: The dataset contains images of various types of waste, organized into 12 categories. These categories include battery, biological, brown-glass, cardboard, clothes, green-glass, metal, plastic, paper, shoes, trash and white-glass, which are crucial for effective waste sorting and recycling.
+- Source: https://www.kaggle.com/datasets/mostafaabla/garbage-classification
+- Description: The dataset contains images of various types of waste, organized into 12 categories. These categories include battery, biological, brown-glass, cardboard, clothes, green-glass, metal, plastic, paper, shoes, trash and white-glass, which are crucial for effective waste sorting and recycling.
 
 # Models
 This project utilized a range of models to classify images of garbage into 12 distinct categories. Both pre-trained models and custom Convolutional Neural Networks (CNNs) were employed to achieve robust performance.
@@ -31,6 +31,4 @@ Custom Convolutional Neural Networks (CNNs) were built using the Keras library, 
 - Batch Normalization and Dropout: Incorporated in more complex models to stabilize training and reduce overfitting.
 
 # Evaluation Metric
-Given the severe class imbalance in the dataset, accuracy alone was not sufficient to reflect the model’s performance comprehensively. Therefore, I prioritized the following metric:
-
-F1 Score: Chosen as a key evaluation metric for its ability to provide a balanced measure of precision and recall. The F1 score is particularly useful for handling imbalanced data, as it considers both false positives and false negatives. Since Keras does not natively support a class-wise F1 score, and the scikit-learn implementation has compatibility issues with Keras/TensorFlow, I implemented a custom F1 score calculation to address these challenges.
+Given the severe class imbalance in the dataset, accuracy alone was not sufficient to reflect the model’s performance comprehensively. Therefore, I prioritized F1 Score. Chosen as a key evaluation metric for its ability to provide a balanced measure of precision and recall. The F1 score is particularly useful for handling imbalanced data, as it considers both false positives and false negatives. Since Keras does not natively support a class-wise F1 score, and the scikit-learn implementation has compatibility issues with Keras/TensorFlow, I implemented a custom F1 score calculation to address these challenges.
