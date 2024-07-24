@@ -8,7 +8,7 @@ This project addresses the critical challenge of waste management and recycling 
 # Models
 This project utilized a range of models to classify images of garbage into 12 distinct categories. Both pre-trained models and custom Convolutional Neural Networks (CNNs) were employed to achieve robust performance.
 ### Pre-Trained Models
-Several pre-trained models were explored to leverage existing deep learning architectures and fine-tune them for our specific classification task:
+Several pre-trained models were explored to leverage existing deep learning architectures and fine-tune them for the specific classification task:
 
 - ResNet-18 and ResNet-34: Residual networks designed to enable the training of very deep models by using skip connections to address the vanishing gradient problem.
 - VGGNet-16 and VGGNet-19: Convolutional networks known for their depth and ability to capture detailed features through small convolutional filters.
